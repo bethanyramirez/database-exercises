@@ -1,4 +1,4 @@
-USE codeup_test_db;
+USE codeup_test_db AS 'Use Statement';
 
 INSERT INTO albums (artist, record_name, release_date, sales, genre)
 VALUES ('Michael Jackson', 'Thriller', 1982, 47.3, 'Pop, Rock & R&B'),

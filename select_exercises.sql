@@ -1,7 +1,16 @@
-SELECT * FROM albums where artist_name = Pink Floyd;
-SELECT release_date FROM albums where record_name = Sgt Pepper''s Lonely Hearts Club Band;
-SELECT genre FROM albums where artist_name = Nevermind;
-SELECT record_name FROM albums where release_date > 1990 AND release_date < 2000;
-SELECT record_name FROM albums where sales < 20.00
+USE codeup_test_db;
 
-(artist, record_name, release_date, sales, genre)
+SELECT 'All albums by Pink Floyd' AS 'SELECT';
+SELECT * FROM albums WHERE artist = 'Pink Floyd';
+
+SELECT 'YEAR OF SGT. PEPPERS LONELY HEARTS CLUB BAND' AS 'YEAR'
+SELECT release_date FROM albums WHERE record_name = 'Sgt Pepper''s Lonely Hearts Club Band';
+
+SELECT genre FROM albums WHERE artist = 'Nevermind';
+
+SELECT record_name FROM albums WHERE release_date BETWEEN 1990 AND 1999;
+
+SELECT * FROM albums WHERE sales < 20.00;
+
+SELECT * FROM albums WHERE genre = 'Rock';
+
